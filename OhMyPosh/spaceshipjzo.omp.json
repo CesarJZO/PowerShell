@@ -1,0 +1,57 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "foreground": "white",
+          "style": "plain",
+          "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
+          "type": "os"
+        },
+        {
+          "foreground": "#4e8cff",
+          "style": "plain",
+          "template": "{{ .UserName }}jzo<white>@</>{{ .HostName }} ",
+          "type": "session"
+        },
+        {
+          "foreground": "#ffd000",
+          "properties": {
+            "style": "agnoster_short"
+          },
+          "style": "plain",
+          "template": "<white>=></> <i>{{ .Path }}</i> ",
+          "type": "path"
+        },
+        {
+          "foreground": "#d91aff",
+          "properties": {
+            "branch_icon": " <#ff94df><b>\ue0a0 </b></>",
+            "fetch_stash_count": true
+          },
+          "style": "plain",
+          "template": "<white>=></> {{ .HEAD }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ",
+          "type": "git"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "lightGreen",
+          "style": "plain",
+          "template": "\u276f",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "final_space": true,
+  "version": 2
+}
