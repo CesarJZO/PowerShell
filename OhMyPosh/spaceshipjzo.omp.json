@@ -7,13 +7,13 @@
         {
           "foreground": "white",
           "style": "plain",
-          "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
+          "template": "<b>{{.Icon}}</b> ",
           "type": "os"
         },
         {
           "foreground": "#4e8cff",
           "style": "plain",
-          "template": "{{ .UserName }}jzo<white>@</>{{ .HostName }} ",
+          "template": "{{ .UserName }}<white>@</>{{ .HostName }} ",
           "type": "session"
         },
         {
@@ -22,17 +22,17 @@
             "style": "agnoster_short"
           },
           "style": "plain",
-          "template": "<white>=></> <i>{{ .Path }}</i> ",
+          "template": "<white><b>\uea9c</b></> <i>{{ .Path }}</i> ",
           "type": "path"
         },
         {
           "foreground": "#d91aff",
           "properties": {
-            "branch_icon": " <#ff94df><b>\ue0a0 </b></>",
+            "branch_icon": "<#ff94df><b>\ue0a0 </b></>",
             "fetch_stash_count": true
           },
           "style": "plain",
-          "template": "<white>=></> {{ .HEAD }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ",
+          "template": "<white><b>\uea9c</b></> {{ .HEAD }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ",
           "type": "git"
         }
       ],
