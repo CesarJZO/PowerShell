@@ -1,0 +1,26 @@
+"schemes":
+[
+    {
+        "background": "#282C34",
+        "black": "#000000",
+        "blue": "#3793de",
+        "brightBlack": "#505050",
+        "brightBlue": "#61AFEF",
+        "brightCyan": "#56B6C2",
+        "brightGreen": "#98C379",
+        "brightPurple": "#C678DD",
+        "brightRed": "#E06C75",
+        "brightWhite": "#FFFFFF",
+        "brightYellow": "#E5C07B",
+        "cursorColor": "#4C80DF",
+        "cyan": "#1ea6b8",
+        "foreground": "#ABB2BF",
+        "green": "#7dc04e",
+        "name": "One Dark",
+        "purple": "#ac40cd",
+        "red": "#f94856",
+        "selectionBackground": "#282C34",
+        "white": "#ABB2BF",
+        "yellow": "#f9b537"
+    }
+]
